@@ -2,10 +2,10 @@ using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMoviment : MonoBehaviourPunCallbacks
 {
-
    public float speed = 30f;
     public float rspeed = 60f;
 
@@ -43,6 +43,8 @@ public class PlayerMoviment : MonoBehaviourPunCallbacks
             {
                 transform.Rotate(0f, rspeed * Time.deltaTime, 0f);
             }
+
         }
     }
+
 }
